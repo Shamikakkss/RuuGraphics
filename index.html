@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Ruu Graphics | Professional Graphic Designer & Branding Specialist</title>
+    <meta name="title" content="Ruu Graphics | Professional Graphic Designer & Branding Specialist">
+    <meta name="description" content="Ruu Graphics by Sachintha Shyamika: Expert logo design, branding, and social media marketing assets. Top-rated freelance designer delivering high-impact visuals globally.">
+    <meta name="keywords" content="Ruu Graphics, Sachintha Shyamika, Graphic Designer Sri Lanka, Logo Design, Branding Specialist, Freelance Designer, Social Media Graphics, Flyer Design, Fiverr Designer">
+    <meta name="author" content="Sachintha Shyamika">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://shamikakkss.github.io/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shamikakkss.github.io/">
+    <meta property="og:title" content="Ruu Graphics | Professional Graphic Design Portfolio">
+    <meta property="og:description" content="High-impact branding and marketing designs for businesses worldwide. Explore the creative portfolio of Ruu Graphics.">
+    <meta property="og:image" content="aboutme Image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://shamikakkss.github.io/">
+    <meta property="twitter:title" content="Ruu Graphics | Professional Graphic Design Portfolio">
+    <meta property="twitter:description" content="High-impact branding and marketing designs for businesses worldwide.">
+    <meta property="twitter:image" content="aboutme Image.png">
+
+    <!-- JSON-LD Structured Data (Google Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Ruu Graphics",
+      "image": "https://shamikakkss.github.io/aboutme%20Image.png",
+      "@id": "https://shamikakkss.github.io/",
+      "url": "https://shamikakkss.github.io/",
+      "telephone": "+94760835913",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Colombo",
+        "addressCountry": "LK"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 6.9271,
+        "longitude": 79.8612
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/sachintha-shyamika-459b02338",
+        "https://github.com/Shamikakkss",
+        "https://www.fiverr.com/s_sdesigns"
+      ],
+      "description": "Professional graphic design services specializing in logo creation, brand identity, and marketing materials."
+    }
+    </script>
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0a0a'/><path d='M30 30h25c10 0 15 5 15 12s-5 12-15 12H30v16M55 54l15 16' stroke='%233b82f6' stroke-width='12' stroke-linecap='round' fill='none'/></svg>">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        :root {
+            --primary: #0a0a0a;
+            --secondary: #141414;
+            --accent: #3b82f6;
+            --text-main: #ffffff;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: var(--primary);
+            color: var(--text-main);
+            letter-spacing: -0.01em;
+        }
+
+        .heading-bold {
+            font-weight: 800;
+            letter-spacing: -0.03em;
+        }
+
+        .portfolio-card .overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.1) 100%);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4);
+            z-index: 100;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 20px 30px -5px rgba(37, 211, 102, 0.5);
+        }
+
+        .glass-nav {
+            background: rgba(10, 10, 10, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        .service-card {
+            background: var(--secondary);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+
+        .service-card:hover {
+            background: #1a1a1a;
+            border-color: rgba(59, 130, 246, 0.5);
+            transform: translateY(-8px);
+        }
+
+        .portfolio-item {
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        
+        .portfolio-item.hidden-item {
+            display: none;
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        /* Modal Styles */
+        #project-modal {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        #project-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content-inner {
+            scrollbar-width: thin;
+            scrollbar-color: #333 #0a0a0a;
+        }
+
+        /* Slideshow Styles */
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent);
+        }
+
+        .cert-card {
+            background: #111;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.3s ease;
+        }
+        .cert-card:hover {
+            border-color: var(--accent);
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="selection:bg-blue-500/40 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full glass-nav z-50 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#home" class="text-2xl heading-bold tracking-tighter uppercase">
+                Ruu<span class="text-blue-500">Graphics</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-10 font-semibold text-[11px] uppercase tracking-[0.25em] items-center">
+                <a href="#home" class="hover:text-blue-500 transition-colors text-white">Home</a>
+                <a href="#about" class="hover:text-blue-500 transition-colors text-white">About</a>
+                <a href="#services" class="hover:text-blue-500 transition-colors text-white">Services</a>
+                <a href="#portfolio" class="hover:text-blue-500 transition-colors text-white">Portfolio</a>
+                <a href="#qualifications" class="hover:text-blue-500 transition-colors text-white">Qualifications</a>
+                <a href="https://wa.me/+94760835913" target="_blank" class="bg-blue-600 text-white px-7 py-3 rounded-full hover:bg-blue-700 transition-all hover:scale-105 active:scale-95 tracking-normal uppercase text-[10px]">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-56 pb-36 px-6 overflow-hidden">
+        <div class="absolute top-[-20%] right-[-10%] w-[50%] h-[50%] bg-blue-600/10 blur-[150px] rounded-full"></div>
+        <div class="absolute bottom-[-10%] left-[-10%] w-[30%] h-[30%] bg-indigo-600/10 blur-[120px] rounded-full"></div>
+        
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center relative z-10">
+            <div>
+                <div class="inline-flex items-center px-4 py-1 mb-8 border border-white/10 bg-white/5 rounded-full">
+                    <span class="relative flex h-2 w-2 mr-3">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    <span class="text-[10px] font-bold tracking-widest uppercase text-neutral-300">Open for Freelance</span>
+                </div>
+                <h1 class="text-6xl md:text-[5.5rem] heading-bold leading-[0.95] mb-8">
+                    WE BUILD <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-500">VISUAL</span> BRANDS.
+                </h1>
+                <p class="text-lg text-neutral-400 mb-12 max-w-lg leading-relaxed font-medium">
+                    Clean, impactful graphic design for brands that prioritize excellence. From identity systems to high-conversion marketing assets.
+                </p>
+                <div class="flex flex-wrap gap-5">
+                    <a href="#portfolio" onclick="filterPortfolio('all')" class="bg-white text-black px-12 py-5 rounded-2xl font-bold hover:bg-blue-500 hover:text-white transition-all duration-300 cursor-pointer">View Portfolio</a>
+                    <a href="https://wa.me/+94760835913" target="_blank" class="group border border-white/10 bg-white/5 text-white px-12 py-5 rounded-2xl font-bold hover:bg-white/10 transition-all duration-300 flex items-center">
+                        <i class="fab fa-whatsapp mr-3 text-xl text-green-500 group-hover:scale-125 transition-transform"></i> WhatsApp Me
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-full h-[600px] rounded-[2.5rem] overflow-hidden relative border border-white/5 group shadow-2xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+                    <!-- Hero Slideshow -->
+                    <div class="slideshow-container" id="hero-slideshow">
+                        <div class="slide active">
+                            <img src="Logo 1(Legend Exteriors LLC)/Mockup 05.jpg" alt="Project 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="slide">
+                            <img src="Stationery 1/main.jpg" alt="Project 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="slide">
+                            <img src="Logo 2/O55GXM1 - Copy.jpg" alt="Project 3" class="w-full h-full object-cover">
+                        </div>
+                        <div class="slide">
+                            <img src="Flyer 1/flyer.jpg" alt="Project 3" class="w-full h-full object-cover">
+                        </div>
+                        <div class="slide">
+                            <img src="post 1/match2.jpg" alt="Project 3" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-32 bg-[#050505] px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div class="relative group">
+                    <div class="aspect-square rounded-[3rem] overflow-hidden border border-white/10 relative z-10 bg-neutral-900">
+                        <img src="aboutme Image.png" alt="Sachintha Shyamika" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100">
+                    </div>
+                    <!-- Stats Card Overlay -->
+                    <div class="absolute -bottom-6 -left-6 z-20 bg-blue-600 p-8 rounded-3xl shadow-2xl transform group-hover:-translate-y-2 transition-transform duration-500">
+                        <div class="text-4xl heading-bold text-white leading-none">2023+</div>
+                        <div class="text-[10px] uppercase tracking-widest text-blue-100 mt-2 font-bold">Fiverr Experience</div>
+                    </div>
+                    <!-- Decorative accents -->
+                    <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-blue-600/10 blur-3xl rounded-full"></div>
+                </div>
+                
+                <div>
+                    <span class="text-blue-500 font-bold tracking-[0.3em] uppercase text-[10px]">The Creative Mind</span>
+                    <h2 class="text-4xl md:text-5xl heading-bold mt-4 mb-8">Hi, I'm Sachintha <span class="text-blue-500 italic">Shyamika.</span></h2>
+                    
+                    <div class="space-y-6 text-neutral-400 font-medium text-lg leading-relaxed">
+                        <p>
+                            I am a passionate Graphic Designer behind <span class="text-white font-semibold">Ruu Graphics</span>. Since <span class="text-white font-semibold">2023</span>, I have been providing professional design services on <span class="text-blue-400 font-semibold">Fiverr</span>, helping clients worldwide build visual authority.
+                        </p>
+                        <p>
+                            My mission is to help businesses stand out in a crowded market through clean, modern, and effective design solutions. Whether it's a minimal logo or a high-impact marketing flyer, I ensure every pixel serves a purpose.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-10 mt-12 pt-12 border-t border-white/5">
+                        <div>
+                            <div class="text-white font-bold uppercase text-[11px] tracking-widest mb-4">Core Skills</div>
+                            <ul class="space-y-2 text-neutral-500 text-sm font-semibold">
+                                <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-3"></i> Brand Identity</li>
+                                <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-3"></i> Marketing Design</li>
+                                <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-3"></i> Social Media Content</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="text-white font-bold uppercase text-[11px] tracking-widest mb-4">Expertise In</div>
+                            <ul class="space-y-2 text-neutral-500 text-sm font-semibold">
+                                <li class="flex items-center"><i class="fab fa-adobe text-blue-500 mr-3"></i> Adobe Illustrator</li>
+                                <li class="flex items-center"><i class="fab fa-adobe text-blue-500 mr-3"></i> Adobe Photoshop</li>
+                                <li class="flex items-center"><i class="fas fa-pen-nib text-blue-500 mr-3"></i> Visual Strategy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-32 bg-[#080808] px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                <div class="max-w-xl">
+                    <span class="text-blue-500 font-bold tracking-[0.3em] uppercase text-[10px]">What I do</span>
+                    <h2 class="text-4xl md:text-5xl heading-bold mt-4">Design Services</h2>
+                </div>
+                <p class="text-neutral-500 font-medium md:text-right">Click a service to view related projects.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div onclick="serviceNavigate('Logos')" class="service-card p-12 rounded-[2rem]">
+                    <i class="fas fa-bezier-curve text-3xl text-blue-500 mb-10"></i>
+                    <h3 class="text-2xl heading-bold mb-4">Logo Design</h3>
+                    <p class="text-neutral-500 font-medium leading-relaxed">Unique, scalable identities that capture your brand essence in a single mark.</p>
+                </div>
+
+                <div onclick="serviceNavigate('Flyers')" class="service-card p-12 rounded-[2rem]">
+                    <i class="fas fa-file-invoice text-3xl text-indigo-500 mb-10"></i>
+                    <h3 class="text-2xl heading-bold mb-4">Flyer Design</h3>
+                    <p class="text-neutral-500 font-medium leading-relaxed">High-impact flyer marketing materials designed for maximum conversion.</p>
+                </div>
+
+                <div onclick="serviceNavigate('Stationery')" class="service-card p-12 rounded-[2rem]">
+                    <i class="fas fa-envelope-open-text text-3xl text-emerald-500 mb-10"></i>
+                    <h3 class="text-2xl heading-bold mb-4">Stationery</h3>
+                    <p class="text-neutral-500 font-medium leading-relaxed">Professional business kits including cards, letterheads, and envelopes.</p>
+                </div>
+
+                <div onclick="serviceNavigate('Social')" class="service-card p-12 rounded-[2rem]">
+                    <i class="fab fa-instagram text-3xl text-pink-500 mb-10"></i>
+                    <h3 class="text-2xl heading-bold mb-4">Social Media</h3>
+                    <p class="text-neutral-500 font-medium leading-relaxed">Custom templates and feed graphics that build your digital authority.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                <div>
+                    <span class="text-blue-500 font-bold tracking-[0.3em] uppercase text-[10px]">Work Archive</span>
+                    <h2 class="text-4xl md:text-5xl heading-bold mt-4">Selected Portfolios</h2>
+                </div>
+                <div class="flex flex-wrap gap-2 bg-white/5 p-1.5 rounded-2xl border border-white/5" id="filter-buttons">
+                    <button onclick="filterPortfolio('all')" class="filter-btn px-5 py-2.5 bg-blue-600 text-white rounded-xl text-[10px] font-bold uppercase tracking-wider transition">All Work</button>
+                    <button onclick="filterPortfolio('Logos')" class="filter-btn px-5 py-2.5 hover:bg-white/5 rounded-xl text-[10px] font-bold uppercase tracking-wider text-neutral-400 transition">Logos</button>
+                    <button onclick="filterPortfolio('Flyers')" class="filter-btn px-5 py-2.5 hover:bg-white/5 rounded-xl text-[10px] font-bold uppercase tracking-wider text-neutral-400 transition">Flyers</button>
+                    <button onclick="filterPortfolio('Stationery')" class="filter-btn px-5 py-2.5 hover:bg-white/5 rounded-xl text-[10px] font-bold uppercase tracking-wider text-neutral-400 transition">Stationery</button>
+                    <button onclick="filterPortfolio('Social')" class="filter-btn px-5 py-2.5 hover:bg-white/5 rounded-xl text-[10px] font-bold uppercase tracking-wider text-neutral-400 transition">Social</button>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                <!-- Project 1 - Logos -->
+                <div class="portfolio-item Logos group relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/5" onclick="openProject('Legend Exteriors Branding', 'Logos', ['Logo 1(Legend Exteriors LLC)/Mockup 13.jpg','Logo 1(Legend Exteriors LLC)/Mockup 05.jpg','Logo 1(Legend Exteriors LLC)/Mockup 04.jpg','Logo 1(Legend Exteriors LLC)/Mockup 08.jpg'])">
+                    <img src="Logo 1(Legend Exteriors LLC)/Mockup 13.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10 bg-gradient-to-t from-black via-black/20 to-transparent">
+                        <span class="text-blue-500 font-bold uppercase text-[10px] tracking-widest mb-3">Logo Design</span>
+                        <h4 class="text-2xl heading-bold">Legend Exteriors Identity</h4>
+                    </div>
+                </div>
+
+                <!-- Project 2 - Flyers -->
+                <div class="portfolio-item Flyers group relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/5" onclick="openProject('Billie\'s Burger Promo', 'Flyers', ['Flyer 1/flyer.jpg'])">
+                    <img src="Flyer 1/flyer.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10 bg-gradient-to-t from-black via-black/20 to-transparent">
+                        <span class="text-blue-500 font-bold uppercase text-[10px] tracking-widest mb-3">Flyer Design</span>
+                        <h4 class="text-2xl heading-bold">Gourmet Burger Marketing</h4>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Stationery -->
+                <div class="portfolio-item Stationery group relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/5" onclick="openProject('CyberVibe Stationery', 'Stationery', ['stationery 1/main.jpg','stationery 1/Asset 5.png','stationery 1/Asset 6.png'])">
+                    <img src="stationery 1/main.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10 bg-gradient-to-t from-black via-black/20 to-transparent">
+                        <span class="text-blue-500 font-bold uppercase text-[10px] tracking-widest mb-3">Stationery</span>
+                        <h4 class="text-2xl heading-bold">Tech-Focused Business Kit</h4>
+                    </div>
+                </div>
+
+                <!-- Project 4 - Social -->
+                <div class="portfolio-item Social group relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/5" onclick="openProject('IDPL 2025 Campaign', 'Social', ['Post 1/match2.jpg'])">
+                    <img src="Post 1/match2.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10 bg-gradient-to-t from-black via-black/20 to-transparent">
+                        <span class="text-blue-500 font-bold uppercase text-[10px] tracking-widest mb-3">Social Media</span>
+                        <h4 class="text-2xl heading-bold">Dynamic Tournament Series</h4>
+                    </div>
+                </div>
+
+                <!-- Project 6 - Logos -->
+                <div class="portfolio-item Logos group relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/5" onclick="openProject('Jewelry Boutique Brand', 'Logos', ['Logo 2/vecteezy_branding-mockup-on-black-shadow_43042131.jpg','Logo 2/O55GXM1.jpg','Logo 2/3.jpg','Logo 2/2.jpg'])">
+                    <img src="Logo 2/O55GXM1 - Copy.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10 bg-gradient-to-t from-black via-black/20 to-transparent">
+                        <span class="text-blue-500 font-bold uppercase text-[10px] tracking-widest mb-3">Logo Design</span>
+                        <h4 class="text-2xl heading-bold">Luxury Visual Branding</h4>
+                    </div>
+                </div>
+
+                <!-- Project 7 - Flyers -->
+                <div class="portfolio-item Flyers group relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/5" onclick="openProject('Services Showcase', 'Flyers', ['Flyer 2/flyer.jpg'])">
+                    <img src="Flyer 2/flyer.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10 bg-gradient-to-t from-black via-black/20 to-transparent">
+                        <span class="text-blue-500 font-bold uppercase text-[10px] tracking-widest mb-3">Flyer Design</span>
+                        <h4 class="text-2xl heading-bold">Legend Services Promotion</h4>
+                    </div>
+                </div>
+
+                <!-- Project 8 - Stationery -->
+                <div class="portfolio-item Stationery group relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/5" onclick="openProject('Elite Gutter Branding', 'Stationery', ['Stationery 2/Gig gallery Image.jpg','Stationery 2/1.jpg','Stationery 2/2.jpg'])">
+                    <img src="Stationery 2/Gig gallery Image.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10 bg-gradient-to-t from-black via-black/20 to-transparent">
+                        <span class="text-blue-500 font-bold uppercase text-[10px] tracking-widest mb-3">Stationery</span>
+                        <h4 class="text-2xl heading-bold">Corporate Executive Cards</h4>
+                    </div>
+                </div>
+
+                <!-- Project 9 - Social -->
+                <div class="portfolio-item Social group relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/5" onclick="openProject('HND Academic Intake', 'Social', ['post 2/Post 2.jpg'])">
+                    <img src="post 2/Post 2.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10 bg-gradient-to-t from-black via-black/20 to-transparent">
+                        <span class="text-blue-500 font-bold uppercase text-[10px] tracking-widest mb-3">Social Media</span>
+                        <h4 class="text-2xl heading-bold">Educational Enrollment Feed</h4>
+                    </div>
+                </div>
+
+                <!-- Project 11 - Logos -->
+                <div class="portfolio-item Logos group relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/5" onclick="openProject('Modern Lawncare Identity', 'Logos', ['Logo 3/Logo mockup3.jpg','Logo 3/Logo mockup7.jpg','Logo 3/Logo mockup4.jpg'])">
+                    <img src="Logo 3/Logo mockup3.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10 bg-gradient-to-t from-black via-black/20 to-transparent">
+                        <span class="text-blue-500 font-bold uppercase text-[10px] tracking-widest mb-3">Logo Design</span>
+                        <h4 class="text-2xl heading-bold">Professional Outdoor Services</h4>
+                    </div>
+                </div>
+
+                <!-- Project 12 - Flyers -->
+                <div class="portfolio-item Flyers group relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/5" onclick="openProject('Dental Medical Flyer', 'Flyers', ['Flyer 3/Flyer 1.jpg'])">
+                    <img src="Flyer 3/Flyer 1.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10 bg-gradient-to-t from-black via-black/20 to-transparent">
+                        <span class="text-blue-500 font-bold uppercase text-[10px] tracking-widest mb-3">Flyer Design</span>
+                        <h4 class="text-2xl heading-bold">Specialized Medical Repair</h4>
+                    </div>
+                </div>
+
+                <!-- Project 13 - Stationery -->
+                <div class="portfolio-item Stationery group relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/5" onclick="openProject('Legend Corporate Kit', 'Stationery', ['stationery 3/main.jpg','stationery 3/21.png','stationery 3/22.png'])">
+                    <img src="stationery 3/main.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10 bg-gradient-to-t from-black via-black/20 to-transparent">
+                        <span class="text-blue-500 font-bold uppercase text-[10px] tracking-widest mb-3">Stationery</span>
+                        <h4 class="text-2xl heading-bold">Unified Business Identity</h4>
+                    </div>
+                </div>
+
+                <!-- Project 14 - Social -->
+                <div class="portfolio-item Social group relative rounded-[2rem] overflow-hidden aspect-[4/5] border border-white/5" onclick="openProject('Burger King Feed', 'Social', ['Post 3/all.jpg','Post 3/beer.jpg','Post 3/sandwich.jpg'])">
+                    <img src="Post 3/all.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <div class="overlay absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-10 bg-gradient-to-t from-black via-black/20 to-transparent">
+                        <span class="text-blue-500 font-bold uppercase text-[10px] tracking-widest mb-3">Social Media</span>
+                        <h4 class="text-2xl heading-bold">Appetizing Social Assets</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-20 text-center">
+                <a href="https://wa.me/+94760835913" target="_blank" class="inline-flex items-center text-white heading-bold text-sm tracking-widest uppercase group border-b border-white/10 pb-2 hover:border-blue-500 transition-all cursor-pointer">
+                    Request a Custom Quote
+                    <i class="fas fa-chevron-right ml-4 text-[10px] text-blue-500 group-hover:translate-x-2 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualifications Section -->
+    <section id="qualifications" class="py-32 bg-[#050505] px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-20">
+                <span class="text-blue-500 font-bold tracking-[0.3em] uppercase text-[10px]">Proof of Excellence</span>
+                <h2 class="text-4xl md:text-5xl heading-bold mt-4">Certifications & Skills</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Academic/Professional List -->
+                <div class="lg:col-span-1 space-y-12">
+                    <div>
+                        <h3 class="text-white font-bold uppercase text-xs tracking-widest mb-8 flex items-center">
+                            <span class="w-8 h-[1px] bg-blue-500 mr-4"></span> Professional Path
+                        </h3>
+                        <div class="space-y-8">
+                            <div class="relative pl-8 border-l border-white/10">
+                                <div class="absolute -left-[5px] top-0 w-[9px] h-[9px] bg-blue-500 rounded-full"></div>
+                                <div class="text-blue-500 font-bold text-xs uppercase mb-1">Ongoing</div>
+                                <div class="text-white font-bold text-lg mb-2">Student in Information Technology</div>
+                                <div class="text-neutral-500 text-sm font-medium">SLIATE - Dehiwala</div>
+                            </div>
+                            <div class="relative pl-8 border-l border-white/10">
+                                <div class="absolute -left-[5px] top-0 w-[9px] h-[9px] bg-blue-500 rounded-full"></div>
+                                <div class="text-blue-500 font-bold text-xs uppercase mb-1">2023 March - Present</div>
+                                <div class="text-white font-bold text-lg mb-2">Freelance Graphic Designer</div>
+                                <div class="text-neutral-500 text-sm font-medium">Fiverr Global Marketplace</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-white font-bold uppercase text-xs tracking-widest mb-8 flex items-center">
+                            <span class="w-8 h-[1px] bg-blue-500 mr-4"></span> Soft Skills
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-5 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-bold text-neutral-400">Client Communication</span>
+                            <span class="px-5 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-bold text-neutral-400">Project & Time Management</span>
+                            <span class="px-5 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-bold text-neutral-400">Creativity & Innovation</span>
+                            <span class="px-5 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-bold text-neutral-400">Problem Solving</span>
+                            <span class="px-5 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-bold text-neutral-400">Adaptability & Flexibility</span>
+                            <span class="px-5 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-bold text-neutral-400">Active Listening</span>
+                            <span class="px-5 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-bold text-neutral-400">Curiosity & Continuous Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate Grid -->
+                <div class="lg:col-span-2">
+                    <h3 class="text-white font-bold uppercase text-xs tracking-widest mb-8 flex items-center">
+                        <span class="w-8 h-[1px] bg-blue-500 mr-4"></span> Official Certificates
+                    </h3>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <!-- Cert 1 -->
+                        <div class="cert-card p-6 rounded-3xl group cursor-pointer" onclick="openProject('IT Essentials', 'Certificate', ['IT_Essentials_certificate.jpg'])">
+                            <div class="aspect-[1.4/1] bg-neutral-900 rounded-2xl overflow-hidden mb-6 border border-white/5 relative">
+                                <img src="IT_Essentials_certificate.jpg" alt="Cert" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500">
+                                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white">
+                                        <i class="fas fa-expand-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="text-white font-bold text-lg mb-1">IT Essentials</h4>
+                            <p class="text-neutral-500 text-xs font-bold uppercase tracking-wider">Issued by Cisco Networking Academy</p>
+                        </div>
+                        
+                        <!-- Cert 2 -->
+                        <div class="cert-card p-6 rounded-3xl group cursor-pointer" onclick="openProject('Web Design', 'Certificate', ['web certificate.png'])">
+                            <div class="aspect-[1.4/1] bg-neutral-900 rounded-2xl overflow-hidden mb-6 border border-white/5 relative">
+                                <img src="web certificate.png" alt="Cert" class="w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500">
+                                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white">
+                                        <i class="fas fa-expand-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="text-white font-bold text-lg mb-1">Web Designing for Beginers</h4>
+                            <p class="text-neutral-500 text-xs font-bold uppercase tracking-wider">Issued by University of Moratuwa</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Call to action for more info -->
+                    <div class="mt-10 p-8 rounded-3xl bg-blue-600/5 border border-blue-500/10 flex items-center justify-between">
+                        <div>
+                            <p class="text-white font-bold">Need a full Resume?</p>
+                            <p class="text-neutral-400 text-sm">Contact me for my detailed CV and references.</p>
+                        </div>
+                        <a href="https://wa.me/+94760835913" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all">Request CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery Modal -->
+    <div id="project-modal" class="fixed inset-0 z-[100] items-center justify-center bg-black/95 p-4 md:p-10">
+        <button onclick="closeModal()" class="absolute top-10 right-10 z-[110] text-white/50 hover:text-white text-4xl transition-colors">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <div class="modal-content-inner w-full max-w-6xl max-h-[90vh] overflow-y-auto bg-[#0a0a0a] rounded-[2.5rem] border border-white/10 shadow-2xl relative">
+            <div class="p-8 md:p-16">
+                <div class="mb-12">
+                    <span id="modal-category" class="text-blue-500 font-bold uppercase text-[11px] tracking-[0.4em]">CATEGORY</span>
+                    <h3 id="modal-title" class="text-4xl md:text-6xl heading-bold mt-4">Project Title</h3>
+                </div>
+                
+                <div id="modal-gallery" class="grid gap-8">
+                    <!-- Dynamic images go here -->
+                </div>
+
+                <div class="mt-20 pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-10">
+                    <div>
+                        <p id="modal-description" class="text-neutral-400 max-w-md text-lg leading-relaxed mb-8">This involves deep collaboration to create a visual language that speaks to the target audience with clarity and impact.</p>
+                        <a id="modal-whatsapp-btn" href="https://wa.me/+94760835913" target="_blank" class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold inline-flex items-center">
+                            Inquire via WhatsApp <i class="fab fa-whatsapp ml-3"></i>
+                        </a>
+                    </div>
+                    <button onclick="closeModal()" class="text-white/30 hover:text-white font-bold uppercase text-xs tracking-widest transition">Close Gallery</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-32 pb-16 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-24 mb-24 items-center">
+                <div>
+                    <h2 class="text-5xl md:text-[5rem] heading-bold leading-[0.9] mb-10">LET'S START <br>A <span class="text-blue-500">PROJECT.</span></h2>
+                    <p class="text-lg text-neutral-500 mb-12 max-w-sm font-medium">Have an idea? Let's discuss your brand's future on WhatsApp today.</p>
+                    <a href="https://wa.me/+94760835913" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-12 py-6 rounded-2xl font-bold text-lg inline-flex items-center transition-all hover:scale-105 shadow-xl shadow-blue-600/20">
+                        <i class="fab fa-whatsapp mr-4 text-2xl"></i> Chat on WhatsApp
+                    </a>
+                </div>
+                <div class="relative hidden lg:block">
+                    <div class="bg-neutral-900/50 border border-white/5 p-16 rounded-[3rem]">
+                        <p class="text-2xl font-semibold italic mb-8">"Your brand isn't just a logo-it's the silent ambassador of your mission, crafted to build trust before you even speak."</p>
+                        <div class="flex items-center space-x-5">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600"></div>
+                            <div>
+                                <div class="font-semibold text-xl">Sachintha Shyamika</div>
+                                <div class="text-sm text-neutral-500 font-bold tracking-">Owner, RuuGraphics</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-10">
+                <div class="text-2xl heading-bold uppercase tracking-tighter">Ruu<span class="text-blue-500">Graphics</span></div>
+                <div class="flex space-x-12 text-[11px] font-bold uppercase tracking-[0.2em] text-neutral-500">
+                    <a href="https://lk.linkedin.com/in/sachintha-shyamika-459b02338?trk=profile-badge" class="hover:text-white transition">LinkedIn</a>
+                    <a href="https://github.com/Shamikakkss" class="hover:text-white transition">Github</a>
+                    <a href="https://www.fiverr.com/s_sdesigns" class="hover:text-white transition">Fiverr</a>
+                </div>
+                <p class="text-neutral-600 text-[11px] font-bold uppercase tracking-widest">© 2026 Ruu Graphics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+94760835913" target="_blank" class="whatsapp-float" aria-label="Contact on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    
+
+    <script>
+        // Hero Slideshow Logic
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function nextSlide() {
+            if (slides.length === 0) return;
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        // Initialize slideshow
+        setInterval(nextSlide, 5000);
+
+        /**
+         * Navigation wrapper for service clicks
+         * Filters the portfolio AND scrolls to it
+         */
+        function serviceNavigate(category) {
+            filterPortfolio(category);
+            
+            // Wait slightly for filter animation to trigger, then scroll
+            const portfolioSection = document.getElementById('portfolio');
+            portfolioSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function filterPortfolio(category) {
+            const items = document.querySelectorAll('.portfolio-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'text-white');
+                btn.classList.add('hover:bg-white/5', 'text-neutral-400');
+                
+                const btnLabel = btn.innerText.toLowerCase();
+                const targetLabel = category.toLowerCase();
+                
+                if (targetLabel === 'all' && btnLabel === 'all work') {
+                    btn.classList.add('bg-blue-600', 'text-white');
+                    btn.classList.remove('text-neutral-400');
+                } else if (btnLabel === targetLabel) {
+                    btn.classList.add('bg-blue-600', 'text-white');
+                    btn.classList.remove('text-neutral-400');
+                }
+            });
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.classList.remove('hidden-item');
+                } else {
+                    item.classList.add('hidden-item');
+                }
+            });
+        }
+
+        function openProject(title, category, images) {
+            const modal = document.getElementById('project-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalCategory = document.getElementById('modal-category');
+            const modalGallery = document.getElementById('modal-gallery');
+            const modalDescription = document.getElementById('modal-description');
+            const modalBtn = document.getElementById('modal-whatsapp-btn');
+
+            modalTitle.innerText = title;
+            modalCategory.innerText = category;
+            
+            // Update modal description text based on project category
+            if (category === 'Certificate') {
+                modalDescription.innerText = "Verified achievement and technical qualification, reflecting a commitment to continuous learning and professional excellence in the industry.";
+                modalBtn.style.display = 'none'; // Hide WhatsApp button for certificates
+            } else {
+                modalDescription.innerText = "This involves deep collaboration to create a visual language that speaks to the target audience with clarity and impact.";
+                modalBtn.style.display = 'inline-flex'; // Show WhatsApp button for design projects
+            }
+
+            modalGallery.innerHTML = '';
+            images.forEach(src => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.className = "w-full rounded-2xl shadow-xl border border-white/5 object-cover";
+                modalGallery.appendChild(img);
+            });
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('project-modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = ''; 
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        document.getElementById('project-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'project-modal') closeModal();
+        });
+    </script>
+</body>
+</html>
